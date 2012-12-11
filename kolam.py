@@ -56,16 +56,6 @@ class Kolam(object):
         print "writing %s" % fn
         return plt.savefig(fn)
 
-    def draw4(self, fn):
-        for i in range(4):
-            for j in range(3):
-                self._step_270()
-            for j in range(2):
-                self._step_90()
-        plt.axis("equal")
-        print "writing %s" % fn
-        return plt.savefig(fn)
-
     def draw8(self, fn):
         for h in range(4):
             self._step_270()
